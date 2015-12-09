@@ -32,13 +32,13 @@ namespace JoeBlogs
             {
                 return new XmlRpcCategory
                 {
-                    categoryId = Convert.ToString(input.CategoryID),
+                    categoryId = Convert.ToInt32(input.CategoryID),
                     categoryName = input.Name,
                     htmlUrl = input.HtmlUrl,
                     rssUrl = input.RSSUrl,
                     title = input.Name,
                     description = input.Description,
-                    parentId = Convert.ToString(input.ParentCategoryID),
+                    parentId = Convert.ToInt32(input.ParentCategoryID),
                 };
             }
 
