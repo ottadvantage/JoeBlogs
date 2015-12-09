@@ -179,7 +179,7 @@ namespace JoeBlogs
                            {
                                count = input.Count,
                                html_url = input.HTMLUrl,
-                               tag_id = input.ID,
+                               tag_id = Convert.ToInt32(input.ID),
                                name = input.Name,
                                rss_url = input.RSSUrl,
                                slug = input.Slug
@@ -440,7 +440,7 @@ namespace JoeBlogs
             {
                 return new Tag
                 {
-                    ID = input.tag_id,
+                    ID = input.tag_id.ToString(),
                     Count = input.count,
                     HTMLUrl = input.html_url,
                     Name = input.name,
